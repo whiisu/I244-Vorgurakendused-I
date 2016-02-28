@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="et">
+	<head>
+	<meta charset="utf-8" />
+		<title>vorm1</title>
+	</head>
+	<body>
+	<form action="vorm1.html" method="GET">
+		<h1>Erinevad vormi input elemendid tellides kuuma jooki</h1>
+		
+		<table>
+			<tr>
+				<td>Sinu nimi:</td>
+				<td><input type="text" name="nimi"></td>
+			</tr>
+			
+			<tr>
+				<td rowspan="2">Vali jook:</td>
+				<td><input type="radio" name="jook" value="kohv"/>
+				<label for="kohv">Kohv</label></td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="jook" value="tee"/>
+				<label for="tee">Tee</label></td>			
+			</tr>
+			
+			<tr>
+				<td rowspan="3">Lisand:</td>
+				<td><input type="checkbox" name="lisand" value="suhkur"><label for="suhkur">Suhkur</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="lisand" value="piim"><label for="piim">Piim</label></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="lisand" value="viski"><label for="viski">Viski</label></td>
+			</tr>
+			
+			<tr>
+				<td>Sinu koduleht:</td>
+				<td><input type="url" name="url"></td>
+			</tr>	
+			<tr>
+				<td>Telefoni number:</td>
+				<td><input type="tel" name="telefon"></td>
+			</tr>			
+			<tr>
+				<td>Tellimus tehtud:</td>
+				<td><input type="time" name="aeg"></td>
+			</tr>			
+			<tr>
+				<td>Hind:</td>
+				<td><input type="number" name="hind"></td>
+			</tr>			
+		</table>
+		<br>
+		Lisainfo: <br>
+		<input type="text" name="lisainfo" size="20" maxlength="100" placeholder="lisasoovid" /><br>	
+		<br>
+		<br>
+		<button type="Submit">Esita tellimus</button>
+	</form>
+	</body>
+</html>
