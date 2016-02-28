@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 	<head>
 	<meta charset="utf-8" />
-		<title></title>
+		<title>Laadimine</title>
 	</head>
 	<body>
+		<ul>
+  			<li>
+    			<a href="Praktikum1_esileht.html">Pealeht</a>
+  			</li>
+  			<li>
+    			<a href="Praktikum2_galerii.html">Galerii</a>
+  			</li>
+  			<li>
+    			<a href="Praktikum2_login.html">Logi Sisse</a>
+  			</li>
+  			<li>
+    			<a href="Praktikum2_registreerimine.html">Registreeri</a>
+  			</li>
+  			<li>
+    			<a href="Praktikum2_pildi_laadimine.html">Lae pilt</a>
+  			</li>
+		</ul>
+	<form action="Praktikum1_esileht.html" method="POST" enctype="multipart/form-data">
+		<h1>Pildi laadimine</h1>
+		Autor: <input type="text" name="autor">
+		<br>	
+		Pealkiri: <input type="text" name="pealkiri">
+		<br>	
+		Pildi suurus: <input type="text" name="pildi suurus">
+		<br>	
+		Kaal: <input type="number" name="kaal">
+		<br>	
+		Hind: <input type="number" name="hind">
+		<br>
+		<br>
+		Suur pilt: <input type="file" name="suur_pilt">
+		<br>
+		Pisike pilt: <input type="file" name="pisike_pilt">
+		<br>
+		<br>
+		<button type="Submit">Lae uus pilt</button>
+	</form>
 	</body>
 </html>
