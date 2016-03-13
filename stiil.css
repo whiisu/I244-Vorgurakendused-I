@@ -7,9 +7,55 @@ body {
 	min-width: 600px;	
 	margin: auto;
 		}
-#heading {color: #FF1493;}
-#sisu {background: Snow;}
-#menu {color:DarkRed; text-decoration:none; font-weight:bold; font-size:16px; text-align:left; }
-h1:hover, h2:hover, h3:hover {background-color:yellow;}
-p:hover {font-size:20px; background-color:white;}
-img {border: 3px solid SpringGreen;}
+#heading {
+	color: #FF1493;
+}
+#sisu {
+	background: Snow;
+}
+.menu {
+	/*color:DarkRed; 
+	text-decoration:none; 
+	font-weight:bold; 
+	font-size:16px; 
+	text-align:left; 
+	list-style-type: none; //removes bullets//
+	margin: 0; 
+	padding: 0;
+}
+ul {*/
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    		overflow: hidden;
+    		background-color: #333;
+		}
+
+		li {
+    		float: left;
+		}
+
+		li a {
+    		display: block;
+    		color: white;
+    		text-align: center;
+    		padding: 14px 16px;
+    		text-decoration: none;
+		}
+
+/* Change the link color to #111 (black) on hover */
+		li a:hover {
+    		background-color: #111;
+		}
+
+
+h1:hover, h2:hover, h3:hover {
+	background-color:yellow;
+}
+p:hover {
+	font-size:20px; 
+	background-color:white;
+}
+img {
+	border: 3px solid SpringGreen;
+}
