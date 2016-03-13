@@ -1,0 +1,15 @@
+body {
+	background: DeepPink;
+}
+.body {
+	background: SpringGreen;
+	max-width: 1000px;
+	min-width: 600px;	
+	margin: auto;
+		}
+#heading {color: #FF1493;}
+#sisu {background: Snow;}
+#menu {color:DarkRed; text-decoration:none; font-weight:bold; font-size:16px; text-align:left; }
+h1:hover, h2:hover, h3:hover {background-color:yellow;}
+p:hover {font-size:20px; background-color:white;}
+img {border: 3px solid SpringGreen;}
