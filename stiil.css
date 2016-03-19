@@ -11,27 +11,45 @@ body {
 	color: #FF1493;
 }
 #sisu {
-	background: Snow;
+	background-color: Snow;
 }
-.menu {
+.menu li.valitud {
+	background: white;
+}
+.menu li.valitud a {
 	color:DarkRed; 
+}
+.menu a{
 	text-decoration:none; 
+	color: black;
 	font-weight:bold; 
 	font-size:16px; 
-	text-align:left; 
-	list-style-type: none; //removes bullets//
-	margin: 0; 
-	padding: 0;
+	text-align:center; 
 }
-
-	body>div {background: black;}
+.menu a:hover{
+	text-decoration: underline;
+}
+.menu{
+	margin-bottom: 10px;
+}
+.menu ul{	
+	list-style-type: none; //removes bullets//
+	margin: 0px; 
+	padding: 0px;
+}
+.menu li{
+	padding: 5px 15px;
+	width: 8em;
+	background-color: SpringGreen;
+	float: left;
+	/*body>div {background: black;}
 		div>ul>li>a {
 			color:white;
 			background: black;
 			display: inline-block;
 			padding: 4px 10px;
 		}
-
+*/
 
 
 h1:hover, h2:hover, h3:hover {

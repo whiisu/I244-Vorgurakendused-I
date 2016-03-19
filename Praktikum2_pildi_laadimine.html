@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>		
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Pealeht</title>
-		<link type="text/css" rel="stylesheet" href="stiil.css" />
-		<style>	</style>
+		<title>Login</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+		<link rel="stylesheet" type="text/css" href="stiil.css" />
 	</head>
-	<body>
-	<div class="body">
-		<ul class="menu">
-  			<li>
-    			<a href="Praktikum1_esileht.html">Pealeht</a>
-  			</li>
-  			<li>
-    			<a href="Praktikum2_galerii.html">Galerii</a>
-  			</li>
-  			<li>
-    			<a href="Praktikum2_login.html">Logi Sisse</a>
-  			</li>
-  			<li>
-    			<a href="Praktikum2_registreerimine.html">Registreeri</a>
-  			</li>
-  			<li>
-    			<a href="Praktikum2_pildi_laadimine.html">Lae pilt</a>
-  			</li>
+	<body class="body">
+		<div class="menu">
+		<ul>
+  			<li><a href="Praktikum1_esileht.html">Pealeht</a></li>
+  			<li><a href="Praktikum2_galerii.html">Galerii</a></li>
+  			<li><a href="Praktikum2_login.html">Logi Sisse</a></li>
+  			<li class="valitud"><a href="Praktikum2_registreerimine.html">Registreeri</a></li>
+  			<li><a href="Praktikum2_pildi_laadimine.html">Lae pilt</a></li>
+  			<p style="clear:both">
 		</ul>
+		</div>
 		
+	<div id="sisu" style="text-align: justify";>
 	<form action="Praktikum1_esileht.html" method="POST" enctype="multipart/form-data">
 		<h1>Pildi laadimine</h1>
 		<br>
@@ -67,5 +59,6 @@
 		<br>
 		<button type="Submit">Lae uus pilt</button>
 	</form>
+	</div>
 	</body>
 </html>
