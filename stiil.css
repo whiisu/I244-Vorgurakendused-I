@@ -1,23 +1,9 @@
-body {
-	background: DeepPink;
-}
-.body {
-	background: SpringGreen;
-	max-width: 1000px;
-	min-width: 600px;	
-	margin: auto;
-		}
-#heading {
-	color: #FF1493;
-}
-#sisu {
-	background-color: Snow;
-}
+
 .menu li.valitud {
 	background: white;
 }
 .menu li.valitud a {
-	color:DarkRed; 
+	color:#FF1493; 
 }
 .menu a{
 	text-decoration:none; 
@@ -50,15 +36,32 @@ body {
 			padding: 4px 10px;
 		}
 */
-
-
-h1:hover, h2:hover, h3:hover {
+}
+body {
+	background: DeepPink;
+}
+.body {
+	background: SpringGreen;
+	max-width: 1000px;
+	min-width: 600px;	
+	margin: auto;
+		}
+.body h1{
+	color:#FF1493;
+}
+.body div h1:hover, h2:hover, h3:hover{
 	background-color:yellow;
 }
-p:hover {
+.body div p:hover{
 	font-size:20px; 
 	background-color:white;
 }
-img {
+.body div img {
 	border: 3px solid SpringGreen;
+}
+#heading {
+	color: #FF1493;
+}
+#sisu {
+	background-color: Snow;
 }
