@@ -4,6 +4,7 @@
 		<title>Galerii</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 		<link rel="stylesheet" type="text/css" href="stiil.css" />
+		<script src="js.js"></script>
 	</head>
 	<body class="body">
 		<div class="menu">
@@ -22,22 +23,35 @@
 		<table border="1">
 			<caption>Kvartskujud</caption>
 			<tr>
-				<td><img src="/thumb/delfiin_thumb.jpeg"/></td>
-				<td><img src="/thumb/elevant_thumb.jpeg"/></td>
-				<td><img src="/thumb/kolju_thumb.jpeg"/></td>
-				<td><img src="/thumb/kuju_thumb.jpeg"/></td>			
+				<td><a href="/img/delfiin.jpeg"><img src="/thumb/delfiin_thumb.jpeg" alt="delfiin"/></a></td>
+				<td><a href="/img/elevant.jpeg"><img src="/thumb/elevant_thumb.jpeg" alt="elevant"/></a></td>
+				<td><a href="/img/kolju.jpeg"><img src="/thumb/kolju_thumb.jpeg" alt="kolju"/></a></td>
+				<td><a href="/img/kuju.jpeg"><img src="/thumb/kuju_thumb.jpeg" alt="kuju"/></a></td>			
 			</tr>
 			<tr>
-				<td><img src="/thumb/kuul_thumb.jpeg"/></td>
-				<td><img src="/thumb/pea_thumb.jpeg"/></td>
-				<td><img src="/thumb/siga_thumb.jpeg"/></td>
-				<td><img src="/thumb/süda_thumb.jpeg"/></td>			
+				<td><a href="/img/kuul.jpeg"><img src="/thumb/kuul_thumb.jpeg" alt="kuul"/></a></td>
+				<td><a href="/img/pea.jpeg"><img src="/thumb/pea_thumb.jpeg" alt="pea"/></a></td>
+				<td><a href="/img/siga.jpeg"><img src="/thumb/siga_thumb.jpeg" alt="siga"/></a></td>
+				<td><a href="/img/süda.jpeg"><img src="/thumb/süda_thumb.jpeg" alt="süda"/></a></td>			
 			</tr>
 			<tr>
-				<td><img src="/thumb/täht_thumb.jpeg"/></td>
+				<td><a href="/img/täht.jpeg"><img src="/thumb/täht_thumb.jpeg" alt="täht"/></a></td>
 			</tr>
 			
 		</table>
+		
+		<div id="hoidja" style="display:none;">
+  			<div id="taust"></div>
+  			<div id="tabel">
+    			<div id="cell">
+      				<div id="sulge" onclick="hideDetails();">Sulge</div>
+      				<div id="sise">
+        				<img id="suurpilt" src="Pictures/sign.jpg" alt="ajutine"/><br/>
+        				<span id="inf"></span>
+      				</div>
+    			</div>
+  			</div>
+		</div>
 		</div>
 	</body>
 </html>
