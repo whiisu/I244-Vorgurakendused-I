@@ -1,13 +1,14 @@
-window.onload = function(){
-	var parlid = document.getElementsByClassName(".bead, .left");
+window.addEventListener ('load', function();{
+	var parlid = document.querySelectorAll("div.bead, div.left");
+	var i;
 	for (i = 0; i < parlid.length; i++){
-		parlid[i].onclick = moveParl();
-	}
-	function moveParl(move){
-		if (move.target.style.sccFloat == "right"){
-			move.target.style.cssFloat = "left";
+		var cssFloat = parlid[i];
+		cssFloat.onclick = function(){
+		if (this.style.sccFloat == "right"){
+			this.style.cssFloat = "left";
 		} else {
-			move.target.style.sccFloat = "right";
+			this.style.sccFloat = "right";
 		}
 	}
-}
+	}
+});
