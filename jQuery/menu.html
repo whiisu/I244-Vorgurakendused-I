@@ -3,7 +3,26 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Menu</title>
-	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".click").click(function(){
+				if ($(this).children("ul").is(":visible")){
+					$(this).children("ul").hide();
+				} else {
+					$(this).children("ul").show();
+				}
+			});	
+		});
+		$(document).ready(function(){	
+			$(".hover").mouseenter(function() {
+					$(this).children("ul").show();
+				}),
+			$(".hover").mouseleave(function() {
+					$(this).children("ul").hide();
+			});
+		});
+	</script>
 		
 	<style type="text/css">
 	/* see stiil siin lugeda läbi */
@@ -55,8 +74,8 @@ body {
 /* alamenüü paigutamine */
 #menu ul {
 	position: absolute; /* vanema suhtes paigutamine*/
-	left: 0px;
-	width: 100%; /* vanema laiune */
+	//left: 0px;
+	width: 18%; /* vanema laiune */
 	display: none; /*lehe laadimisel peidus */
 }
 #menu ul a {
@@ -64,28 +83,10 @@ body {
 }
 
 	</style>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#menu > .click".click(function(){
-				$("#menu ul").hide();
-				$(this).children("ul").show();
-			});
-			$("#menu > .hover).on({
-				mouseenter: function() {
-					$("#menu ul").hide();
-					$(this).children("ul").show();
-				},
-				mouseleave: function() {
-					$(this).children("ul").hide();
-				}
-			});
-		});
-	</script>
 </head>
 <body>
 
-<div id="wrap"><!-- enamasti paigutatakse lehe sisu ühe div sisse, millele määratakse laius ja asukoht-->
+<div id="wrap">
 
 	<ul id="menu">
 		<li>
