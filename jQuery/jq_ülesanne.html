@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kodune ülesanne</title>
+	<style type="text/css">
+	.active { background: skyblue; padding: 10px;}
+	</style>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+	//lehe laadimisel rakendatakse esimesele listielemendile klass 'active'
+	$(document).ready(function(){
+		$("li").first().addClass("active");
+	});
+	
+	//nupule tekstiga 'edasi' klikkides võetakse kõigilt listielementidelt klass ära ning antakse järjekorras järgmisele elemendile
+	$(document).ready(function(){
+		$("#next").click(function(){
+			if ($(".active").is(":last-child")){
+				$(".active").removeClass("active");
+				$("li").first().addClass("active");
+			} else {
+				$(".active").next().addClass("active");
+				$(".active").first().removeClass("active");			
+			};
+		});
+	});
+	
+	// nupule tekstiga 'tagasi' klikkides võetakse kõigilt listielementidelt klass ära ning antakse järjekorras eelmisele elemendile 
+	$(document).ready(function(){
+		$("#prev").click(function(){
+			if ($(".active").is(":first-child")){
+				$(".active").removeClass("active");
+				$("li").last().addClass("active");
+			} else {
+				$(".active").prev().addClass("active");
+				$(".active").last().removeClass("active");			
+			};
+		});
+	});
+	</script>
+</head>
+<body>
+<button id="next">edasi</button>
+<button id="prev">tagasi</button>
+
+<ul>
+<li>esimene</li>
+<li>teine</li>
+<li>kolmas</li>
+<li>neljas</li>
+</ul>
+
+</body>
+</html>
