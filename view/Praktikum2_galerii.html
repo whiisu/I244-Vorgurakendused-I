@@ -1,7 +1,11 @@
 <!-- päis on failis head.html --->
-		<h1>Galerii</h1>
+<?php foreach ($pildid as $key => $pilt):
+echo "<img src=\"{$pilt["small"]}\"	alt=\"{$pilt["alt"]}\">";
+endforeach;
+?>	
+<h1>Galerii</h1>
 		<table border="1">
-		<?php foreach ($pildid as $big => "href" $small => "src" $alt => "alt")
+		
 			<caption>Kvartskujud</caption>
 			<tr>
 				<td><a href="/img/delfiin.jpeg"><img src="/thumb/delfiin_thumb.jpeg" alt="delfiin"/></a></td>
@@ -18,7 +22,7 @@
 			<tr>
 				<td><a href="/img/täht.jpeg"><img src="/thumb/täht_thumb.jpeg" alt="täht"/></a></td>
 			</tr>
-			?>
+			
 		</table>
 		<div id="hoidja" style="display:none;">
 <!-- alumine osa on failis head.html --->	
