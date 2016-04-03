@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Kristallid</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 50%;
+            height: 200px;
+            border: solid green 5px;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 10px;
+        }
+        p{
+            font-size: 14px;
+            color: blue;
+        }
+        img{
+            float: right;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    
+  <?php
+  foreach($kristallid as $key => $kristall):
+  echo "<div><p>";
+  echo "Kvartsist voolitud {$kristall['nimi']} kaalub {$kristall['kaal']} grammi ja maksab {$kristall['hind']} eurot. Kristalli pilti, mis on tehtud {$kristall['autor']} poolt asub <a href="{$kristall['pilt']}">siin</a>.";
+  echo " </p><img src=\"{$kristall['pilt']}\"></div>";
+	endforeach;
+  ?>
+ </body>
+</html>
