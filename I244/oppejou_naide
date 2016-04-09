@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Esimene praktikum</title>
+		<link rel="stylesheet" type="text/css" 	href="stiil.css">
+
+	</head>
+	<body>
+		<h1> Esimene HTML lehekülg </h1>
+		<p> võrgurakendused </p>
+		<?php
+			//see on php kood
+			include("counter.php")?>
+
+		<div id="timer"></div>
+		<!--<script>var m = new Date();
+			var t = new Date();
+			document.getElementById("tund").innerHTML = m.getMinutes();
+			document.getElementById("minut").innerHTML = t.getHours();
+		</script>--->
+		<img src="https://www.petfinder.com/wp-content/uploads/2012/11/122163343-conditioning-dog-loud-noises-632x475.jpg" alt="hull koer" />
+	<script src="timer.js"></script>
+	</body>
+
+</html>
+
