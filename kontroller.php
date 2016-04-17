@@ -1,6 +1,6 @@
 ini_set("display_errors", 1);
 
-<?php 
+<?php require_once("functions.php"); //et saaks neid funktsioone kasutada
 $pildid=array(
   array("big"=>"../img/delfiin.jpeg", "small"=>"../thumb/delfiin_thumb.jpeg", "alt"=>"delfiin"),
   array("big"=>"../img/elevant.jpeg", "small"=>"../thumb/elevant_thumb.jpeg", "alt"=>"elevant"),
