@@ -12,7 +12,7 @@ $pildid=array(
   array("big"=>"../img/süda.jpeg", "small"=>"../thumb/süda_thumb.jpeg", "alt"=>"süda"),
   array("big"=>"../img/täht.jpeg", "small"=>"../thumb/täht_thumb.jpeg", "alt"=>"täht"),	
  );
- include_once("view/head.html");
- include("view/Praktikum2_galerii.html");
- include_once("view/foot.html");
+ include_once("head.html");
+ include("Praktikum2_galerii.html");
+ include_once("foot.html");
 ?>
