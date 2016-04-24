@@ -1,6 +1,9 @@
 ini_set("display_errors", 1);
 
 <?php require_once("functions.php"); //et saaks neid funktsioone kasutada
+
+alusta_sessioon();
+
 $pildid=array(
   array("big"=>"../img/delfiin.jpeg", "small"=>"../thumb/delfiin_thumb.jpeg", "alt"=>"delfiin"),
   array("big"=>"../img/elevant.jpeg", "small"=>"../thumb/elevant_thumb.jpeg", "alt"=>"elevant"),

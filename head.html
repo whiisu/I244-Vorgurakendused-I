@@ -19,3 +19,9 @@
 		</div>
 		
 		<div id="sisu" style="text-align: justify";>
+		 <?php if (isset($_SESSION['show_login_message']) && $_SESSION['show_login_message'] == true): ?>
+        <p>Sisselogimine õnnestus! </p>
+        <?php
+            $_SESSION['show_login_message'] = false;
+            endif;
+        ?>
