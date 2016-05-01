@@ -1,0 +1,36 @@
+2. Luua uus tabel 'loomaaed', kus on järgnevad väljad:
+
+CREATE TABLE kaernits_loomaaed (
+    id integer PRIMARY KEY auto_increment,
+    nimi varchar(50),
+    vanus integer,
+    liik varchar(50),
+    puur integer
+    );
+
+3. Täita eelnevalt loodud tabel vähemalt 5 reaga:
+
+INSERT INTO `kaernits_loomaaed`(`id`, `nimi`, `vanus`, `liik`, `puur`) VALUES (1,'Peep',7,'karu',1),
+(2,'Paula',4,'karu',1),
+(3,'Rotsu',8,'siga',2),
+(4,'Sannu',2,'jaanalind',3),
+(5,'Mihkel',5,'ahv',4),
+(6,'Mann',7,'ahv',4);
+
+4. Koostada järgnevad päringud:
+
+    Hankida kõigi mingis ühes kindlas puuris elavate loomade nimi ja puuri number
+
+SELECT nimi, puur FROM `kaernits_loomaaed` WHERE puur=4;
+
+    Hankida vanima ja noorima looma vanused
+
+SELECT MAX(vanus) as vanim, MIN(vanus) as noorim FROM `kaernits_loomaaed`;
+
+    hankida puuri number koos selles elavate loomade arvuga (vihjeks: group by ja count )
+
+SELECT puur, count(id) as loomade_arv_puuris FROM `kaernits_loomaaed` GROUP BY puur;
+
+    suurendada kõiki tabelis olevaid vanuseid 1 aasta võrra
+
+UPDATE `kaernits_loomaaed` SET `vanus`=vanus+1;
