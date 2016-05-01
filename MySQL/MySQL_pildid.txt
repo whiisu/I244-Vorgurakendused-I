@@ -1,0 +1,48 @@
+2. Loo uus tabel <sinu tudengikood>_pildid, väljadega: 
+
+CREATE TABLE kaernits_pildid (
+    id integer PRIMARY KEY auto_increment,
+    thumb varchar(100),
+    pilt varchar(100),
+    pealkiri varchar(50),
+    autor varchar(100),
+    punktid integer
+);
+
+3. Sisestada tabelisse vähemalt 5 rida:
+
+INSERT INTO `kaernits_pildid`(`id`, `thumb`, `pilt`, `pealkiri`, `autor`, `punktid`) VALUES (1,'delfiin_thumb.jpeg','delfiin.jpeg','delfiin','madaqascarminerals',4),
+(2,'elevant_thumb.jpeg','elevant.jpeg','elevant','wpclipart',5),
+(3,'kolju_thumb.jpeg','kolju.jpeg','kolju','scullis',3),
+(4,'kuju_thumb.jpeg','kuju.jpeg','kuju','ebth',4),
+(5,'kuul_thumb.jpeg','kuul.jpeg','kuul','madaqascarminerals',3),
+(6,'pea_thumb.jpeg','pea.jpeg','pea','healing-crystals',4);
+
+3. php:
+$sql = "INSERT INTO `kaernits_pildid`(`id`, `thumb`, `pilt`, `pealkiri`, `autor`, `punktid`) VALUES (1,\'delfiin_thumb.jpeg\',\'delfiin.jpeg\',\'delfiin\',\'madaqascarminerals\',4),\n"
+    . "(2,\'elevant_thumb.jpeg\',\'elevant.jpeg\',\'elevant\',\'wpclipart\',5),\n"
+    . "(3,\'kolju_thumb.jpeg\',\'kolju.jpeg\',\'kolju\',\'scullis\',3),\n"
+    . "(4,\'kuju_thumb.jpeg\',\'kuju.jpeg\',\'kuju\',\'ebth\',4),\n"
+    . "(5,\'kuul_thumb.jpeg\',\'kuul.jpeg\',\'kuul\',\'madaqascarminerals\',3),\n"
+    . "(6,\'pea_thumb.jpeg\',\'pea.jpeg\',\'pea\',\'healing-crystals\',4)";
+
+4. Kirjuta SQL päring, mis leiab tabelist pildid, mis on saanud vähem kui 50 punkti ja sorteerib tulemused punktide arvu järgi kahanevas järjekorras:
+
+SELECT * FROM `kaernits_pildid` WHERE punktid < 50 ORDER BY punktid DESC;
+
+
+5. Kirjuta SQL päring, mis leiab tabelist ühe autori kõik pildid (autor vali ise):
+
+SELECT * FROM `kaernits_pildid` WHERE autor = "madaqacarminerals";
+
+6. Kirjuta SQL päring, mis lisab kõikidele piltidele 3 punkti. Lahendus teha UPDATE päringuga:
+
+UPDATE `kaernits_pildid` SET punktid = punktid +3;
+
+7. Kirjuta SQL päring, mis leiab, mitu pilti on erinevatel autoritel (COUNT(*) ja GROUP BY autor):
+
+SELECT autor, count(id) as pilte_kokku FROM `kaernits_pildid` GROUP BY autor;
+
+8. Kirjuta päring, mis liidab kokku kui palju on süsteemis piltidele punkte antud ( SUM(...) ):
+
+SELECT sum( punktid ) AS punktisumma FROM `kaernits_pildid`;
