@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 	<title>ITIQ</title>
+    	<meta charset="utf-8" />
+    	<link rel="stylesheet" type="text/css" href="view/stiil.css">
+   
+    	<script src=""></script>
+</head>
+
+<body class="body">
+<div class="menu">
+    <h1>ITIQ - IT Küsimustik</h1>
+    <ul>
+    	<li>
+            <a href="register.html">Registreeri</a>
+        </li>
+        <li>
+            <a href="login.html">Logi sisse</a>
+        </li>
+
+        <li>
+            <a href="questionary.html">Küsimused</a>
+        </li>
+	 <li>
+            <a href="results.html">Tulemused</a>
+        </li>
+       
+    </ul>   
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <form method="post" action="vorm.php">
+
+    <table>
+        <caption> Registreerimise vorm </caption>
+        <tr>
+          <th>
+              Kasutajanimi:
+          </th>
+          <td>
+              <input type="text" name="username" placeholder="Kasutajanimi" size="20">
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+              Parool:
+          </th>
+          <td>
+              <input type="password" name="password1" size="20">
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+              Korda parooli:
+          </th>
+          <td>
+              <input type="password" name="password2" size="20">
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+              <button type="submit"> Registreeri </button>
+          </td>
+        </tr>
+
+    </table>
+    </form>
+   
+  </body>
+</html>

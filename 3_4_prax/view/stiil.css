@@ -1,0 +1,63 @@
+.menu li.valitud {
+	background: yellow;
+}
+.menu li.valitud a {
+	color:#FF1493; 
+}
+.menu a{
+	text-decoration:none; 
+	color: black;
+	font-weight:bold; 
+	font-size:16px; 
+	text-align:center; 
+}
+.menu a:hover{
+	text-decoration: underline;
+}
+.menu{
+	margin-bottom: 10px;
+}
+.menu ul{	
+	list-style-type: none; //removes bullets//
+	margin: 0px; 
+	padding: 0px;
+}
+.menu li{
+	list-style-type: none;
+	padding: 5px 15px;
+	width: 10em;
+	background-color: white;
+	float: left;
+}
+
+body {
+	background: DeepPink;
+}
+.body {
+	background: SpringGreen;
+	max-width: 1000px;
+	min-width: 600px;	
+	margin: auto;
+		}
+.body h1{
+	color:#FF1493;
+}
+.body div h1:hover, h2:hover, h3:hover{
+	background-color:yellow;
+}
+.body div p:hover{
+	font-size:20px; 
+	background-color:white;
+}
+.body div img {
+	border: 3px solid Green;
+}
+h1{
+	text-align: center;
+}
+caption{
+	font-size:20px;
+	color: purple;
+	font-weight:bold;
+
+}
