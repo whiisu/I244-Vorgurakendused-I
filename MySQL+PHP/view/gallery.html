@@ -1,6 +1,16 @@
 <div id="gallery">
 
     <?php
+    
+    if(isset($_SESSION['upload_success'])) {
+        echo $_SESSION['upload_success'] . "<br>";
+        $_SESSION['upload_success'] = null;
+    }
+
+    if(isset($_SESSION['img_edit_success'])) {
+    echo $_SESSION['img_edit_success'] . "<br>";
+    $_SESSION['img_edit_success'] = null;
+    }
 
     foreach($GLOBALS['images'] as $image) {
         $imageSize = getimagesize($image['small']);

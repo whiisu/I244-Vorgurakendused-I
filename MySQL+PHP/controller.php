@@ -5,8 +5,8 @@ connect_db();
 $images = getDBImages();
 
 $error_messages = array();
-$mode = 'main_page';
-$mainContentView = 'view/main_page.html';
+$mode = 'mainpage';
+$mainContentView = 'view/mainpage.html';
 if (isset($_GET['mode'])) {
     $mode = $_GET['mode'];
     switch($mode) {

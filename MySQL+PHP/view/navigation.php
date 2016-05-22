@@ -7,7 +7,7 @@
             <a href="?mode=gallery">Gallery</a>
         </li>
 
-        <?php if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] == false): ?>
+        <?php if (!isset($_SESSION['username'])) : ?>
         <li>
             <a href="?mode=login">Log in</a>
         </li>
@@ -16,7 +16,7 @@
         </li>
         <?php endif; ?>
 
-        <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true): ?>
+        <?php if (isset($_SESSION['username'])) : ?>
         <li>
             <a href="?mode=image_load">Upload image</a>
         </li>

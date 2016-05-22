@@ -3,12 +3,17 @@
     <table>
         <tr>
             <td>User name</td>
-            <td><input type="text" name="user" value="<?php echo $input_user; ?>"></td>
+            <td><input type="text" name="user" value="<?php if (isset($input_user)) echo $input_user; ?>"></td>
             <td class="error_message"><?php if (!is_null($error_login_empty_user)) echo "Sisesta kasutajanimi"; ?></td>
         </tr>
             <td>Password</td>
             <td><input type="password" name="password"></td>
             <td class="error_message"><?php if (!is_null($error_login_empty_password)) echo "Sisesta parool" ?> </td>
+        <?php if (isset($errors)):?>
+        <?php foreach($errors as $error):?>
+        <div style="color:magenta;"><?php echo htmlspecialchars($error); ?></div>
+        <?php endforeach;?>
+        <?php endif;?>           
         </tr>
         <tr>
             <td></td>
